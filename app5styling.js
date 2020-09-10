@@ -10,6 +10,8 @@ ReactDOM.render(
   </div>,
   document.getElementById("root")
 );
+// we may put class "h" in a CSS
+
 // you may use html global attributes
 // like contentEditable or spellCheck.....
 // unlike class in html, we use className in jsx
