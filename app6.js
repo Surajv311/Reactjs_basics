@@ -9,6 +9,8 @@ const style = {
 // you can also update the prop
 // unlike css & html.....
 
+// inline styling is used sometimes in react
+
 style.color = "blue";
 
 ReactDOM.render(
