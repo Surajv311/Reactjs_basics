@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const source = "https://picsum.photos/200";
+
 ReactDOM.render(
   <div>
     <h1 className = "h" >My Favourite Foods</h1>
