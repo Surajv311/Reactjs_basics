@@ -16,6 +16,8 @@ function Card_to_display(props) {
 // NOTE: we can see that the tag in ReactDom.render is the function ... imported directly instead of separate jsx
 // ALSO FOLLOW THE NAMING CONVENTIONS!!!
 
+// we are passing the values to the function !
+
 ReactDOM.render(
   <div>
     <h1>My Contacts</h1>
