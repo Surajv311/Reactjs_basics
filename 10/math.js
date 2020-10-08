@@ -1,16 +1,15 @@
-const pi = 3.14  ;
+const pi = 3.14;
 
-fun1 function(){
-
-  return pi*3;
+function fun1() {
+  return pi * 3;
 }
 
-fun2 function(){
-  return pi*2;
+function fun2() {
+  return pi * 2;
 }
 
-default export pi ; // this is the default export
+export default pi; // this is the default export
 
 // to do any other exports
 
-export {fun1 , fun2}; 
+export { fun1, fun2 };
