@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
 function App() {
-  // use state returns two values, -> value & a function 
-  // the 0 passed is stored in count 
+  // use state returns two values, -> value & a function
+  // the 0 passed is stored in count
+  // const [state, setState] = useState(initialState); //
   const [count, setCount] = useState(0);
 
   function increase() {
