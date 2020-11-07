@@ -11,7 +11,7 @@ function App() {
     <div className="container">
       {/*Ternary Operator*/}
       {isLoggedIn ? <h1>Hello</h1> : <Login />}
-      {/*AND Operator in React*/}
+      {/*AND Operator in React , -> it's like inline if statement ... */}
       {currentTime > 12 && <h1>Why are you still working?</h1>}
     </div>
   );
