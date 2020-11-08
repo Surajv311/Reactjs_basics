@@ -12,12 +12,14 @@ function App() {
   function handleClick(event) {
     setHeading(name);
 
+    // the preventdefault would prevent to do the next action that is refreshing the page...
     event.preventDefault();
   }
 
   return (
     <div className="container">
       <h1>Hello {headingText}</h1>
+      {/* a form by default refreshes the pages .. hence instead we are targeting it back to the function onclick button... */}
       <form onSubmit={handleClick}>
         <input
           onChange={handleChange}
