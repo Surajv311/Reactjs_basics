@@ -20,7 +20,9 @@
 
 // providing an alternative name ....
 // // const { name: catName, sound: catSound } = cat;
+//  assigning values
 // // const { name = "Fluffy", sound = "Purr" } = cat;
+//  pulling out values from an obj inside an obj...
 // // const {feedingRequirements: {food, water} } = cat;
 // // console.log(food);
 
