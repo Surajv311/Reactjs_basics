@@ -2,13 +2,13 @@
 
 // //Destructuring Arrays
 // // console.log(animals);
-// destructuring it into 2 items & naming as cat & a dog 
+// destructuring it into 2 items & naming as cat & a dog
 // const [cat, dog] = animals;
 // // console.log(cat);
 
 /////////////////////
-//const {name, sound } = cat ; 
-//console.log(sound) // is equal to animals[0].sound; 
+//const {name, sound } = cat ;
+//console.log(sound) // is equal to animals[0].sound;
 /////////////////////
 
 // const [animal, makeSound] = useAnimals(cat);
@@ -18,7 +18,7 @@
 // //Destructuring Objects
 // // const { name, sound} = cat;
 
-// providing an alternative name .... 
+// providing an alternative name ....
 // // const { name: catName, sound: catSound } = cat;
 // // const { name = "Fluffy", sound = "Purr" } = cat;
 // // const {feedingRequirements: {food, water} } = cat;
@@ -32,17 +32,20 @@ import cars from "./practice";
 const [honda, tesla] = cars;
 
 const {
-  speedStats: { topSpeed: hondaTopSpeed }
+  speedStats: {
+    // renaming it to hondaTopSpeed in destructuring
+    topSpeed: hondaTopSpeed,
+  },
 } = honda;
 const {
-  speedStats: { topSpeed: teslaTopSpeed }
+  speedStats: { topSpeed: teslaTopSpeed },
 } = tesla;
 
 const {
-  coloursByPopularity: [hondaTopColour]
+  coloursByPopularity: [hondaTopColour],
 } = honda;
 const {
-  coloursByPopularity: [teslaTopColour]
+  coloursByPopularity: [teslaTopColour],
 } = tesla;
 
 ReactDOM.render(
