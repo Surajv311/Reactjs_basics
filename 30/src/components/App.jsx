@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 function App() {
+  // initially the input text is an empty string
   const [inputText, setInputText] = useState("");
+  // initially the items is an empty []
   const [items, setItems] = useState([]);
 
   function handleChange(event) {
@@ -10,7 +12,10 @@ function App() {
   }
 
   function addItem() {
-    setItems(prevItems => {
+    // so setItems is changing the state of items aka adding the items from input text to the array since : const [items, setItems] = useState([]);
+    setItems((prevItems) => {
+      // adds the input text into the array that holds previous items
+      // using spread operator...
       return [...prevItems, inputText];
     });
     setInputText("");
@@ -29,7 +34,7 @@ function App() {
       </div>
       <div>
         <ul>
-          {items.map(todoItem => (
+          {items.map((todoItem) => (
             <li>{todoItem}</li>
           ))}
         </ul>
